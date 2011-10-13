@@ -16,7 +16,7 @@ SRC_URI="http://sourceforge.net/projects/xvidcap/files/xvidcap/${PV}/${MY_P}.tar
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86"
-IUSE="acpi apm bluetooth scsi"
+IUSE="+X"
 
 RDEPEND="media-video/ffmpeg
          x11-base/xorg-server"
