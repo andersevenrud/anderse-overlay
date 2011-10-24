@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/ps3mediaserver/ps3mediaserver-1.20.412-r1.ebuild,v 1.1 2011/01/07 17:03:11 vapier Exp $
+# Author: Anders Evenrud <andersevenrud@gmail.com>
 
 EAPI="2"
 
@@ -43,7 +43,7 @@ src_install() {
 	insinto /usr/share/${PN}
 	doins -r pms.jar *.conf linux plugins renderers || die
 	use tsmuxer && { dosym /opt/bin/tsMuxeR /usr/share/${PN}/linux/ || die ; }
-	dodoc CHANGELOG FAQ README
+	dodoc CHANGELOG README
 }
 
 pkg_postinst() {
