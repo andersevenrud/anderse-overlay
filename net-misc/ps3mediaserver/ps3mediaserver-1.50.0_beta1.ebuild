@@ -23,7 +23,7 @@ RDEPEND=">=virtual/jre-1.6.0
 S=${WORKDIR}/pms-linux-${MY_PV}
 
 src_prepare() {
-	rm linux/tsMuxeR* || die
+	#rm linux/tsMuxeR* || die
 	cat <<-EOF > ${PN}
 	#!/bin/sh
 	echo "Setting up ~/.${PN} based on /usr/share/${PN}/"
