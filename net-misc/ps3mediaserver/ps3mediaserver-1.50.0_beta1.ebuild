@@ -5,6 +5,7 @@
 EAPI="2"
 
 MY_PV="1.50.0-b1"
+MY_PV2="1.50.0"
 
 DESCRIPTION="DLNA compliant UPNP server for streaming media to Playstation 3"
 HOMEPAGE="http://code.google.com/p/ps3mediaserver"
@@ -20,10 +21,10 @@ RDEPEND=">=virtual/jre-1.6.0
 	tsmuxer? ( media-video/tsmuxer )
 	transcode? ( media-video/mplayer[encode] )"
 
-S=${WORKDIR}/pms-linux-${MY_PV}
+S=${WORKDIR}/pms-linux-${MY_PV2}
 
 src_prepare() {
-	#rm linux/tsMuxeR* || die
+	rm linux/tsMuxeR* || die
 	cat <<-EOF > ${PN}
 	#!/bin/sh
 	echo "Setting up ~/.${PN} based on /usr/share/${PN}/"
