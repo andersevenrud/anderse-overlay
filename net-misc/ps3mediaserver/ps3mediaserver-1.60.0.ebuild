@@ -1,6 +1,7 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/ps3mediaserver/ps3mediaserver-1.54.0.ebuild,v 1.1 2012/07/01 00:38:05 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/ps3mediaserver/ps3mediaserver-1.60.0.ebuild,v 1.1 2012/07/23 00:00:00 anderse Exp $
+# $Author: Anders Evenrud <andersevenrud@gmail.com>
 
 EAPI="4"
 
