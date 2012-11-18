@@ -66,7 +66,7 @@ src_install() {
 	insinto ${PMS_HOME}
 	doins -r pms.jar *.conf documentation plugins renderers *.xml
 	use tsmuxer && dosym /opt/tsmuxer/bin/tsMuxeR ${PMS_HOME}/linux/tsMuxeR
-	dodoc CHANGELOG README.md
+	dodoc README.md
 
 	newicon -s 32 icon-32.png ${PN}.png
 	newicon -s 256 icon-256.png ${PN}.png
